@@ -1,0 +1,42 @@
+p {
+	font-family: "fira sans", sans serif;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 30%;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+.anim {
+	height: 100%;
+	width: 100px;
+}
+#ball-one {
+	background: fuchsia;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	transition: left 3s ease-in;
+}
+
+#ball-two {
+	background: lightblue;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	top: 100px;
+	left: 300px;
+	transition: left 3s ease-in;
+}
+
+.anim:active #ball-one {
+	left: 110px;
+	transition-duration: 0.5s;
+}
+
+.anim:active #ball-two {
+	left: 90%;
+}
